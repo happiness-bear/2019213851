@@ -1,0 +1,252 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+a:link{
+    color:white
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: red;
+    background: rgba(0, 0, 0, .2);
+}
+a:active{
+    color: white;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto;
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.direct
+{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 250px;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #4b4b4b;
+}
+
+.direct .picture
+{
+    width: 150px;
+    height: 150px;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 50%;
+    border: #fff 5px solid;
+    transition: transform 0.5s;
+    place-content: center;
+    overflow: hidden;
+}
+
+.direct .picture:hover{
+    transform: rotate(1turn);
+}
+
+
+
+.direct .nav
+{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    line-height: 3em;
+}
+
+.direct .nav .a{
+    color: #fff;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    transition: background .3s, box-shadow .3s;
+}
+
+.item1{
+    display: grid;
+    grid-column: 2/5;
+    grid-row: 1/2;
+    background-image: url("/imgbg-1.png");
+    background-size: auto;
+    background-attachment: fixed;
+    place-content: center;
+    grid-template-columns: 300px 1fr 1fr 0.5fr 1.5fr;
+}
+
+.item1 .b{
+    grid-column: 2/3;
+    line-height: 3em;
+    text-align: left;
+    font-size: 18px;
+}
+
+.item1 .c{
+    grid-column: 3/4;
+    line-height: 3em;
+    text-align: left;
+    font-size: 18px;
+    text-indent: 2em;
+}
+
+.item1 .d{
+    grid-column: 5/6;
+    line-height: 3em;
+    text-align: left;
+    font-size: 18px;
+    place-content: center;
+}
+
+.item1 .d p{
+    line-height: normal;
+}
+
+.item2{
+    display: grid;
+    grid-column: 2/5;
+    grid-row: 2/3;
+    background-image: url("img/bg-2.png");
+    background-size: auto;
+    background-attachment: fixed;
+    place-content: center;
+    grid-template-columns: 300px 1fr 1fr 0.5fr 1.5fr;
+}
+
+.item2 .e{
+    grid-column: 2/3;
+    line-height: 3em;
+}
+
+.item2 .f{
+    grid-column: 3/4;
+    line-height: 3em;
+}
+
+.item2 .f h4{
+    text-align: center;
+}
+
+.item2 .g{
+    grid-column: 5/6;
+    line-height: 3em;
+    text-align: left;
+    font-size: 18px;
+    place-content: center;
+}
+
+.item2 .g p{
+    text-indent: 2em;
+    line-height: normal;
+}
+
+
+/*  */
+/* .item2 .attribute .sixangle canvas{ */
+    /* width:400px; */
+    /* height:400px; */
+/* } */
+
+.item3{
+    display: grid;
+    grid-column: 2/5;
+    grid-row: 3/4;
+    background-image: url("img/bg-3.png");
+    background-attachment: fixed;
+    grid-template-columns: 300px 1fr 1fr 1fr;
+}
+
+
+
+.item3 .skill1{
+    grid-column: 2/3;
+    text-indent: 2em;
+    place-content: center;
+    line-height: 3em;
+}
+
+.item3 .skill1 h2{
+    text-align: left;
+}
+
+.item3 .skill2{
+    grid-column: 3/4;
+    text-indent: 2em;
+    place-content: center;
+    line-height: 3em;
+}
+
+.item3 .skill3{
+    grid-column: 4/5;
+    text-indent: 2em;
+    place-content: center;
+    line-height: 3em;
+}
+
+.item3 .skill3 p{
+    line-height: normal;
+}
+
+.item3 .skill1 p, .item3 .skill2 p, .item3 .skill3 p{
+    font-size: 18px;
+}
+
+.item3 .skill1 ul li, .item3 .skill2 ul li, .item3 .skill3 ul li
+{
+    text-align: left;
+}
+
+.item4{
+    display: grid;
+    grid-column: 2/5;
+    grid-row: 4/5;
+    grid-template-columns: 300px 1fr 1fr 1fr;
+    background-attachment: fixed;
+    background-image: url("img/bg-1.png");
+}
+
+.item4 .story1{
+    grid-column: 2/3;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 3em;
+}
+
+.item4 .story2{
+    grid-column: 3/4;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 3em;
+}
+
+.item4 .story3{
+    grid-column: 4/5;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 3em;
+}
+
+.item4 .story1 p, .item4 .story2 p,
+.item4 .story3 p{
+    font-size: 18px;
+    line-height: normal;
+}
