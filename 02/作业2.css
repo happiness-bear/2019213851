@@ -1,0 +1,54 @@
+.tabtop13 {
+	margin-top: 13px;
+}
+
+.tabtop13 td{
+	background-color:#ffffff;
+	height:25px;
+	line-height:150%;
+}
+
+.biaoti{
+	font-family: 微软雅黑;
+	font-size: 26px;
+	font-weight: bold;
+	border-bottom:1px dashed #CCCCCC;
+	color: #255e95;
+}
+
+.font-center
+{ 
+    text-align:center;
+}
+
+.btbg
+{
+    background:#e9faff !important;/*使用了Important后显示的优先级会提高*/
+}
+
+.btbg1
+{
+    background:#f3f3f3 !important;
+}
+
+.titfont {
+	
+	font-family: 微软雅黑;
+	font-size: 16px;
+	font-weight: bold;
+	color: #255e95;
+	background-color:#e9faff;
+    width: 14.3%;
+}
+
+#message{
+    background-color: #f1d71a;
+    font-family: 微软雅黑;
+	font-size: 14px;
+	font-weight: bold;
+	place-content: center;
+	width: 300px;
+	height: auto;
+	position: absolute;
+	display: none;
+}
