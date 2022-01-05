@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汉诺塔演示程序</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="hanoi.js"></script>
+    <link rel="stylesheet" href="hanoi.css" type="text/css" />
+</head>
+<body>
+    <div id="content">
+        <h1><b>汉诺塔演示程序</b></h1>
+        <div id="control">
+            <label for="num">盘子数目:</label>
+            <input type="number" value="3" id="num" max="7" min="1" />
+            &nbsp; &nbsp;
+            <label for="speed">演示速度(ms/次):</label>
+            <input type="number" value="400" id="speed" max="1000" min="100" step="100" />
+            <input type="button" value="初始化" id="init" />
+            <input type="button" value="开始演示" id="start" />
+        </div>
+        <div id="view">
+            <div id="block"></div>
+            <div class="zhuzi zz1"></div>
+            <div class="zhuzi zz2"></div>
+            <div class="zhuzi zz3"></div>
+            <div class="dizuo dz1">A</div>
+            <div class="dizuo dz2">B</div>
+            <div class="dizuo dz3">C</div>
+        </div>
+    </div>
+</body>
+</html>
