@@ -33,8 +33,6 @@ var hnt = (function(){
     //默认属性
     hnt.options = {
         speed:400,     //移动速度
-		highlight:true,//移动过程是否变色
-		color:'red',   //移动过程中变色
 		xjg:250 	   //横向间隔 250px
     };
 
@@ -68,9 +66,10 @@ var hnt = (function(){
         //定义起始坐标
         var start = {top : 180, left : 60 };
         hnt.defTop = start.top;
+        //设定盘子的高度最高不能超过40px
         hnt.height = (start.top / num) > 40 ? 40 : (start.top / num); 
 
-        //盘子的宽度
+        //盘子左边距离底座左边缘的长度减去20px
         var _width = (180 - 50) / (2 * num);
 
         //开始创建
@@ -250,7 +249,7 @@ var hnt = (function(){
     };
 
     //盘子的移动动画
-    hnt.movie.move = function(param, order){
+    hnt.movie.move = function(param){
         if("top" in param.end){
             $(param.elem).animate({top:param.end.top},param.options.speed);
         }
@@ -267,7 +266,7 @@ var hnt = (function(){
         }
         if(order < movie.length){
             var time = movie[order].options.speed;
-            hnt.movie.move(movie[order], order);
+            hnt.movie.move(movie[order]);
             order++;
             setTimeout(play, time < 300 ? 300 :time);
         }
